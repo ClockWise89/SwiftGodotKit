@@ -60,7 +60,8 @@ public class UIGodotWindow: UIView {
         let size = max(UIScreen.main.bounds.size.width, UIScreen.main.bounds.size.height)
         windowLayer.frame.size = CGSize(width: size, height: size)
         windowLayer.contentsScale = self.contentScaleFactor
-        windowLayer.backgroundColor = CGColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 0.0)
+        windowLayer.backgroundColor = UIColor.clear.cgColor
+        windowLayer.isOpaque = true
         layer.addSublayer(windowLayer)
         self.windowLayer = windowLayer
     }
