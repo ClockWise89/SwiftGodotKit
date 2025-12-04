@@ -62,6 +62,8 @@ public class UIGodotWindow: UIView {
         windowLayer.contentsScale = self.contentScaleFactor
         windowLayer.backgroundColor = UIColor.clear.cgColor
         windowLayer.isOpaque = true
+        layer.backgroundColor = UIColor.clear.cgColor
+        layer.isOpaque = true
         layer.addSublayer(windowLayer)
         self.windowLayer = windowLayer
     }
